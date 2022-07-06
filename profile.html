@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-bottom navbar-light bg-blue containerMini px-1 py-2">
+      <a class="navbar-brand m-0 py-0" href="dashboard.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.4602 8.69904C19.4598 8.69858 19.4593 8.69812 19.4588 8.69766L11.3004 0.539551C10.9527 0.19165 10.4903 0 9.99855 0C9.50676 0 9.04442 0.191498 8.69652 0.539398L0.542379 8.69339C0.539632 8.69614 0.536886 8.69904 0.534139 8.70178C-0.179972 9.42001 -0.178751 10.5853 0.537649 11.3017C0.86495 11.6292 1.29723 11.8188 1.75942 11.8387C1.77819 11.8405 1.79711 11.8414 1.81618 11.8414H2.14135V17.8453C2.14135 19.0334 3.10799 20 4.29635 20H7.48818C7.81166 20 8.07412 19.7377 8.07412 19.4141V14.707C8.07412 14.1649 8.51509 13.7239 9.05724 13.7239H10.9399C11.482 13.7239 11.923 14.1649 11.923 14.707V19.4141C11.923 19.7377 12.1853 20 12.5089 20H15.7008C16.8891 20 17.8558 19.0334 17.8558 17.8453V11.8414H18.1573C18.6489 11.8414 19.1113 11.6499 19.4593 11.302C20.1765 10.5844 20.1768 9.41711 19.4602 8.69904V8.69904Z"
+            />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Beranda</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="challenge.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.26496 0.440985C1.46185 -0.593307 0 0.253997 0 2.33198V17.6666C0 19.7466 1.46185 20.5928 3.26496 19.5595L16.6682 11.8729C18.4719 10.8382 18.4719 9.16192 16.6682 8.12751L3.26496 0.440985Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Tantangan</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="leaderboards.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 1H16V0H4V1H1C0.4 1 0 1.4 0 2V4.4C0 6.7 1.7 8.6 4 8.9V9C4 11.9 6 14.3 8.70001 14.9L8.00001 17H5.7C5.3 17 4.9 17.3 4.8 17.7L4 20H16L15.2 17.7C15.1 17.3 14.7 17 14.3 17H12L11.3 14.9C14 14.3 16 11.9 16 9V8.9C18.3 8.6 20 6.7 20 4.4V2C20 1.4 19.6 1 19 1ZM4 6.9C2.9 6.6 2 5.6 2 4.4V3H4V6.9ZM12 10L10 8.9L8.00001 10L8.50001 8L7.00001 6H9.10001L10 4L10.9 6H13L11.5 8L12 10ZM18 4.4C18 5.6 17.1 6.7 16 6.9V3H18V4.4Z"
+            />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Peringkat</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="rewards.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.6957 3.87804H17.2398C17.4319 3.57413 17.5586 3.233 17.5947 2.87222C17.7101 1.71922 17.1029 0.685626 16.0691 0.227385C15.1189 -0.193825 14.051 -0.0216383 13.2821 0.675782L11.4438 2.34179C11.0858 1.95023 10.5712 1.70414 10 1.70414C9.42781 1.70414 8.91234 1.95101 8.55425 2.34379L6.71363 0.675587C5.94344 -0.0218336 4.87601 -0.193357 3.92621 0.227619C2.89269 0.685899 2.28535 1.71984 2.40113 2.87281C2.43734 3.23331 2.56398 3.57429 2.75598 3.87804H1.30434C0.583945 3.87804 0 4.46202 0 5.18237V7.13889C0 7.49905 0.291992 7.79108 0.652187 7.79108H19.3478C19.708 7.79108 20 7.49909 20 7.13889V5.18237C20 4.46202 19.416 3.87804 18.6957 3.87804ZM8.04347 3.66066V3.87804H4.97539C4.16476 3.87804 3.5268 3.12234 3.72926 2.27836C3.81844 1.90668 4.08672 1.58984 4.43371 1.42945C4.91019 1.20922 5.43801 1.27992 5.8382 1.64215L8.04402 3.64144C8.0439 3.64788 8.04347 3.65421 8.04347 3.66066ZM16.3005 2.69906C16.2519 3.37691 15.6396 3.87812 14.9601 3.87812H11.9565V3.66074C11.9565 3.65304 11.956 3.64542 11.956 3.63773C12.4557 3.18476 13.5397 2.20226 14.1276 1.66933C14.4618 1.36648 14.9293 1.22512 15.3615 1.35402C15.9817 1.53902 16.3459 2.06644 16.3005 2.69906Z"
+            />
+            <path d="M1.30432 9.0954V18.6606C1.30432 19.381 1.88827 19.965 2.60866 19.965H8.69562V9.0954H1.30432Z" />
+            <path d="M11.3043 9.0954V19.965H17.3913C18.1117 19.965 18.6956 19.381 18.6956 18.6606V9.0954H11.3043Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Hadiah</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="profile.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.99991 8.94733C10.4706 8.94733 12.4736 6.9444 12.4736 4.47366C12.4736 2.00293 10.4706 0 7.99991 0C5.52917 0 3.52625 2.00293 3.52625 4.47366C3.52625 6.9444 5.52917 8.94733 7.99991 8.94733Z" />
+            <path d="M7.99998 10C3.63985 10 0.105225 13.5346 0.105225 17.8947C0.105225 19.0574 1.04781 20 2.21051 20H13.7895C14.9522 20 15.8948 19.0574 15.8948 17.8947C15.8947 13.5346 12.3601 10 7.99998 10Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Profil</span>
+        </div>
+      </a>
+    </nav>
+
+    <section class="containerBase">
+      <div class="paddingContent">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="position-relative">
+            <img src="https://source.unsplash.com/random" alt="User" width="100" height="100" class="rounded-circle" />
+            <button class="bg-blue border-0 d-flex rounded-circle btn-changeProfile">
+              <svg class="svgProfile" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_2726)">
+                  <path
+                    d="M9.88086 2.68738L1.07744 11.4914C1.03315 11.5359 1.00117 11.592 0.985939 11.6522L0.0101637 15.5688C-0.0190245 15.6867 0.0156207 15.8121 0.101662 15.8981C0.166765 15.9632 0.255472 15.9992 0.346209 15.9992C0.374001 15.9992 0.402428 15.9958 0.430094 15.9888L4.34665 15.0129C4.40769 14.9977 4.46315 14.9659 4.50744 14.9216L13.3116 6.11814L9.88086 2.68738Z"
+                    fill="white"
+                    fill-opacity="0.7"
+                  />
+                  <path
+                    d="M15.4926 1.48694L14.5126 0.506972C13.8577 -0.147986 12.7162 -0.147352 12.062 0.506972L10.8616 1.70737L14.2922 5.138L15.4926 3.93761C15.8198 3.61057 16 3.17529 16 2.71233C16 2.24938 15.8198 1.8141 15.4926 1.48694Z"
+                    fill="white"
+                    fill-opacity="0.7"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2726">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <span class="text-white mt-2">Lorem ipsum</span>
+        </div>
+
+        <div class="card bg-darken rounded-20 mt-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-white fs-md">Gold</span>
+              <h3 class="text-white">2.5M</h3>
+              <button class="bg-yellowGradient mx-auto w-100 text-white rounded-pill mt-2 border-0 fs-md py-1 px-3">Upgrade</button>
+            </div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="53" cy="53" r="45" stroke="white" stroke-opacity="0.1" stroke-width="16" />
+                <path d="M53.1446 8C77.9175 8 98 28.1472 98 53C98 77.8528 77.9175 98 53.1446 98C42.4862 98 32.696 94.2706 25 88.0415" stroke="url(#paint0_linear_4_406)" stroke-width="16" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="paint0_linear_4_406" x1="93" y1="8" x2="96.222" y2="86.0867" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF7A00" />
+                    <stop offset="1" stop-color="#FFBF00" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="d-flex flex-column align-items-center position-absolute">
+                <span class="text-white fs-sm">3.5M</span>
+                <span class="text-white fs-sm">to Diamond</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-yellowGradient rounded-20 my-3" role="button">
+          <div class="card-body">
+            <svg width="64" height="34" viewBox="0 0 74 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M71.6129 0.516174H16.7097V1.70971C16.7097 2.3695 16.1758 2.90325 15.5162 2.90325C14.8564 2.90325 14.3226 2.36935 14.3226 1.70971V0.516174H2.38708C1.06881 0.516174 0 1.58484 0 2.90325V13.4102C0 14.0119 0.295856 14.5837 0.807496 14.9002C3.18634 16.3715 4.77416 18.9972 4.77416 22C4.77416 25.0027 3.18634 27.6285 0.807496 29.0998C0.295856 29.4163 0 29.9883 0 30.5898V41.0968C0 42.4151 1.06881 43.4839 2.38708 43.4839H14.3226V42.2903C14.3226 41.6305 14.8565 41.0968 15.5162 41.0968C16.1759 41.0968 16.7097 41.6307 16.7097 42.2903V43.4839H71.6129C72.9312 43.4839 74 42.4151 74 41.0968V2.90325C74 1.58484 72.9312 0.516174 71.6129 0.516174ZM16.7097 37.5162C16.7097 38.176 16.1758 38.7097 15.5162 38.7097C14.8564 38.7097 14.3226 38.1758 14.3226 37.5162V35.1291C14.3226 34.4693 14.8565 33.9356 15.5162 33.9356C16.1759 33.9356 16.7097 34.4695 16.7097 35.1291V37.5162ZM16.7097 30.3548C16.7097 31.0146 16.1758 31.5483 15.5162 31.5483C14.8564 31.5483 14.3226 31.0144 14.3226 30.3548V27.9677C14.3226 27.3079 14.8565 26.7742 15.5162 26.7742C16.1759 26.7742 16.7097 27.3081 16.7097 27.9677V30.3548ZM16.7097 23.1936C16.7097 23.8533 16.1758 24.3871 15.5162 24.3871C14.8564 24.3871 14.3226 23.8532 14.3226 23.1936V20.8065C14.3226 20.1467 14.8565 19.6129 15.5162 19.6129C16.1759 19.6129 16.7097 20.1468 16.7097 20.8065V23.1936ZM16.7097 16.0323C16.7097 16.6921 16.1758 17.2259 15.5162 17.2259C14.8564 17.2259 14.3226 16.692 14.3226 16.0323V13.6452C14.3226 12.9855 14.8565 12.4517 15.5162 12.4517C16.1759 12.4517 16.7097 12.9856 16.7097 13.6452V16.0323ZM16.7097 8.87095C16.7097 9.53073 16.1758 10.0645 15.5162 10.0645C14.8564 10.0645 14.3226 9.53059 14.3226 8.87095V6.48387C14.3226 5.82408 14.8565 5.29033 15.5162 5.29033C16.1759 5.29033 16.7097 5.82423 16.7097 6.48387V8.87095Z"
+                fill="#FFD341"
+              />
+              <path
+                d="M70.4193 41.0967H20.2902C19.631 41.0967 19.0967 40.5624 19.0967 39.9032V4.09674C19.0967 3.43753 19.631 2.9032 20.2902 2.9032H70.4193C71.0785 2.9032 71.6128 3.43753 71.6128 4.09674V39.9032C71.6128 40.5624 71.0785 41.0967 70.4193 41.0967Z"
+                fill="#FFECA7"
+              />
+              <path
+                d="M44.3673 30.2481L38.1808 34.132C36.8175 34.9879 35.1065 33.7449 35.4992 32.1837L37.2813 25.0998L31.6758 20.4162C30.4403 19.384 31.0939 17.3727 32.7001 17.2639L39.9879 16.7697L42.71 9.99119C43.3099 8.49732 45.4247 8.49732 46.0247 9.99119L48.7468 16.7697L56.0346 17.2639C57.6408 17.3728 58.2944 19.3841 57.0589 20.4162L51.4534 25.0998L53.2355 32.1837C53.6282 33.7449 51.9174 34.988 50.5539 34.132L44.3673 30.2481Z"
+                fill="#FFBF00"
+              />
+              <path
+                d="M52.4591 29.098C44.7251 28.6253 38.168 23.8378 35.1717 17.0963L32.7001 17.2638C31.0939 17.3728 30.4403 19.3841 31.6758 20.4162L37.2813 25.0997L35.499 32.1836C35.1064 33.7449 36.8172 34.9878 38.1807 34.1319L44.3672 30.2481L50.5536 34.1319C51.9169 34.9878 53.6279 33.7449 53.2351 32.1836L52.4591 29.098Z"
+                fill="#FFA800"
+              />
+            </svg>
+            <span class="text-white text-uppercase fs-md fw-bolder ms-2">vouchers & coupons</span>
+          </div>
+        </div>
+
+        <div class="card bg-darken rounded-20" role="button">
+          <div class="card-body py-2">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="33" height="33" rx="10" fill="#379A6A" />
+              <mask id="mask0_4_2731" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
+                <rect width="33" height="33" rx="10" fill="#3E5C89" />
+              </mask>
+              <g mask="url(#mask0_4_2731)">
+                <g style="mix-blend-mode: soft-light">
+                  <path d="M-6.1875 40.0125L35.8875 -3.29999V40.0125H-6.1875Z" fill="white" fill-opacity="0.45" />
+                </g>
+              </g>
+              <path
+                d="M18.2456 11.5692L10.0749 19.7405C10.0338 19.7817 10.0042 19.8338 9.99003 19.8897L9.08438 23.5248C9.05729 23.6342 9.08945 23.7506 9.16931 23.8304C9.22973 23.8908 9.31206 23.9243 9.39628 23.9243C9.42207 23.9243 9.44845 23.9211 9.47413 23.9146L13.1092 23.0089C13.1658 22.9947 13.2173 22.9652 13.2584 22.9241L21.4298 14.7534L18.2456 11.5692Z"
+                fill="#C5CEDC"
+              />
+              <path
+                d="M23.4539 10.4551L22.5444 9.54554C21.9365 8.93765 20.8771 8.93824 20.2699 9.54554L19.1558 10.6597L22.3398 13.8437L23.4539 12.7296C23.7576 12.4261 23.9248 12.0221 23.9248 11.5924C23.9248 11.1627 23.7576 10.7587 23.4539 10.4551Z"
+                fill="#C5CEDC"
+              />
+            </svg>
+            <span class="text-white fs-md ms-2">Daftar Alamat</span>
+          </div>
+        </div>
+        <div class="card bg-darken rounded-20 mt-3" role="button">
+          <div class="card-body py-2">
+            <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.7981" width="33" height="33" rx="10" fill="#B94A27" />
+              <mask id="mask0_4_2740" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="34" height="33">
+                <rect x="1.7981" width="33" height="33" rx="10" fill="#3E5C89" />
+              </mask>
+              <g mask="url(#mask0_4_2740)">
+                <g style="mix-blend-mode: soft-light">
+                  <path d="M-4.3894 40.0125L37.6856 -3.29999V40.0125H-4.3894Z" fill="white" fill-opacity="0.45" />
+                </g>
+              </g>
+              <path d="M17.2095 13.0615L17.048 17.3799L20.6625 19.7119L21.3235 18.6857L18.3677 16.7805L18.505 13.1099L17.2095 13.0615Z" fill="#C5CEDC" />
+              <path
+                d="M18.2302 8.77519C13.9334 8.6145 10.3312 11.9653 10.1707 16.2578L7.57967 16.1609L10.8179 19.6507L10.8736 19.7782L14.4891 16.4193L11.8981 16.3224C12.0229 12.9843 14.8318 10.3779 18.1699 10.5027C21.5081 10.6276 24.1144 13.4365 23.9896 16.7746C23.8648 20.1127 21.0559 22.7191 17.7178 22.5942C16.0465 22.5317 14.5649 21.7931 13.5132 20.6597L12.2454 21.8361C13.5963 23.2964 15.5026 24.2412 17.6488 24.3215C21.9457 24.4822 25.5565 21.1317 25.717 16.8392C25.8775 12.5467 22.5271 8.93588 18.2302 8.77519Z"
+                fill="#C5CEDC"
+              />
+            </svg>
+            <span class="text-white fs-md ms-2">Jejak Acara</span>
+          </div>
+        </div>
+        <div class="card bg-darken rounded-20 mt-3" role="button">
+          <div class="card-body py-2">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="33" height="33" rx="10" fill="#277CB9" />
+              <mask id="mask0_4_2776" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
+                <rect width="33" height="33" rx="10" fill="#3E5C89" />
+              </mask>
+              <g mask="url(#mask0_4_2776)">
+                <g style="mix-blend-mode: soft-light">
+                  <path d="M-6.1875 40.0125L35.8875 -3.29999V40.0125H-6.1875Z" fill="white" fill-opacity="0.25" />
+                </g>
+              </g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.4579 20.7821C14.9311 20.7821 13.3799 19.8757 12.4746 18.6761C8.13129 18.6761 8 24.8808 8 24.8808H24.9147C24.9147 24.8808 25.2556 18.6486 20.3713 18.6486C19.4671 19.863 17.9847 20.7821 16.4579 20.7821V20.7821Z"
+                fill="#C5CEDC"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.0959 13.3439C20.0959 15.129 18.4664 18.5427 16.4546 18.5427C14.446 18.5427 12.8154 15.128 12.8154 13.3439C12.8154 11.5597 14.445 10.1113 16.4546 10.1113C18.4664 10.1123 20.0959 11.5608 20.0959 13.3439V13.3439Z"
+                fill="#C5CEDC"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.7203 11.8033C21.7203 11.4687 21.2545 11.1987 20.6763 11.1966V10.5073C20.6763 10.4046 20.7155 8 16.4675 8C12.2216 8 12.2608 10.4046 12.2608 10.5073V11.2209C12.2502 11.2209 12.2418 11.2178 12.2322 11.2178C11.6573 11.2178 11.1946 11.4835 11.1946 11.8128V14.7288C11.1946 15.056 11.6583 15.3228 12.2322 15.3228C12.8061 15.3228 13.272 15.056 13.272 14.7288V11.8128C13.272 11.7673 13.2434 11.726 13.2265 11.6836V10.8885C13.2265 10.8154 12.9215 9.00059 16.4675 9.00059C20.0146 9.00059 19.6461 10.8154 19.6461 10.8885V11.726C19.6398 11.7525 19.6196 11.7758 19.6196 11.8033V14.786C19.6196 15.1216 20.0887 15.3938 20.67 15.3938C20.6827 15.3938 20.6922 15.3895 20.7049 15.3895V16.4791H19.663V17.5061H21.7309L21.7203 11.8033V11.8033Z"
+                fill="#C5CEDC"
+              />
+            </svg>
+            <span class="text-white fs-md ms-2">Layanan Pelanggan</span>
+          </div>
+        </div>
+        <div class="card bg-darken rounded-20 mt-3" role="button">
+          <div class="card-body py-2">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="33" height="33" rx="10" fill="#713E89" />
+              <mask id="mask0_4_2751" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
+                <rect width="33" height="33" rx="10" fill="#3E5C89" />
+              </mask>
+              <g mask="url(#mask0_4_2751)">
+                <g style="mix-blend-mode: soft-light">
+                  <path d="M-6.1875 40.0125L35.8875 -3.29999V40.0125H-6.1875Z" fill="white" fill-opacity="0.45" />
+                </g>
+              </g>
+              <path d="M12.008 7.51207C12.008 6.91534 11.2662 6.6399 10.8768 7.09201C10.5174 7.50917 10.8138 8.15568 11.3644 8.15568C11.7198 8.15568 12.008 7.86753 12.008 7.51207Z" fill="#C5CEDC" />
+              <path
+                d="M20.6199 6.77502C20.6199 6.22274 20.1722 5.77502 19.6199 5.77502H13.9741C13.4218 5.77502 12.9741 6.22274 12.9741 6.77502V8.27786C12.9741 8.83015 12.5264 9.27786 11.9741 9.27786H10.9565C10.4043 9.27786 9.95654 9.72557 9.95654 10.2779V21.1154C9.95654 21.6677 10.4043 22.1154 10.9565 22.1154H19.62C20.1722 22.1154 20.62 21.6677 20.62 21.1154L20.6199 6.77502ZM18.6287 16.0566C18.6287 16.3665 18.3775 16.6177 18.0676 16.6177H12.5089C12.199 16.6177 11.9478 16.3665 11.9478 16.0566C11.9478 15.7467 12.199 15.4954 12.5089 15.4954H18.0676C18.3775 15.4954 18.6287 15.7467 18.6287 16.0566ZM18.6287 13.6723C18.6287 13.9822 18.3775 14.2335 18.0676 14.2335H12.5089C12.199 14.2335 11.9478 13.9822 11.9478 13.6723C11.9478 13.3624 12.199 13.1112 12.5089 13.1112H18.0676C18.3775 13.1112 18.6287 13.3624 18.6287 13.6723ZM18.6287 11.288C18.6287 11.5979 18.3775 11.8492 18.0676 11.8492H12.5089C12.199 11.8492 11.9478 11.5979 11.9478 11.288C11.9478 10.9781 12.199 10.7269 12.5089 10.7269H18.0676C18.3775 10.7269 18.6287 10.9781 18.6287 11.288Z"
+                fill="#C5CEDC"
+              />
+              <path
+                d="M22.3152 8.58826C21.9129 8.58826 21.5868 8.91435 21.5868 9.31661V21.2377C21.5868 22.3422 20.6914 23.2377 19.5868 23.2377H13.2256C12.7587 23.2377 12.3801 23.6162 12.3801 24.0831C12.3801 24.5501 12.7587 24.9286 13.2256 24.9286H21.0435C22.1481 24.9286 23.0435 24.0332 23.0435 22.9286V9.31661C23.0435 8.91435 22.7174 8.58826 22.3152 8.58826Z"
+                fill="#C5CEDC"
+              />
+            </svg>
+            <span class="text-white fs-md ms-2">Syarat & Ketentuan</span>
+          </div>
+        </div>
+        <div class="card bg-darken rounded-20 mt-3" role="button">
+          <div class="card-body py-2">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="33" height="33" rx="10" fill="#A93838" />
+              <mask id="mask0_4_2762" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
+                <rect width="33" height="33" rx="10" fill="#3E5C89" />
+              </mask>
+              <g mask="url(#mask0_4_2762)">
+                <g style="mix-blend-mode: soft-light">
+                  <path d="M-6.1875 40.0125L35.8875 -3.29999V40.0125H-6.1875Z" fill="white" fill-opacity="0.45" />
+                </g>
+              </g>
+              <path
+                d="M7.7264 15.9275L12.8775 11.8279C13.4099 11.4153 14.2085 11.788 14.2085 12.4668V13.8378C14.2085 14.277 14.5013 14.663 14.9406 14.663H23.1264C23.5657 14.663 23.925 14.9825 23.925 15.435V17.5913C23.925 18.0172 23.5657 18.3899 23.1264 18.3899H14.9406C14.5013 18.3899 14.2085 18.7361 14.2085 19.1752V20.5462C14.2085 21.2117 13.4099 21.5844 12.8908 21.1718L7.75302 17.1787C7.32709 16.8725 7.31378 16.247 7.7264 15.9275Z"
+                fill="#C5CEDC"
+              />
+            </svg>
+            <span class="text-white fs-md ms-2">Keluar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

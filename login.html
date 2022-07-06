@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="containerBase d-flex flex-column justify-content-center position-relative">
+      <div class="px-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="img/Logo.png" alt="Logo" width="100" class="position-relative imgLogo" />
+        </div>
+
+        <form action="">
+          <div class="position-relative">
+            <div style="margin-top: 50px">
+              <label for="userid" class="text-white">User ID</label>
+              <input type="text" id="userid" name="userid" class="mt-2 d-block w-100" />
+            </div>
+
+            <div class="password mt-3">
+              <label for="password" class="text-white">Kata Sandi</label>
+              <input type="password" id="password" name="password" class="mt-2 d-block w-100" />
+            </div>
+
+            <button type="button" onclick="togglePassword()" id="showPassword" class="border-0 position-absolute btnShowPassword">
+              <i id="eyeIcon" class="bi bi-eye-fill" style="font-size: 22px; color: #fff"></i>
+            </button>
+
+            <div class="text-end mt-2 mb-4">
+              <a href="#" class="text-blue text-decoration-none">Lupa kata sandi?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-confirm w-100">LOGIN</button>
+          </div>
+        </form>
+
+        <div class="text-center mt-5">
+          <span class="text-white">Belum punya akun? </span>
+          <a href="register.html" class="text-blue text-decoration-none">Daftar</a>
+        </div>
+
+        <button type="button" class="d-none btn btn-primary btn-help rounded-circle p-2">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" fill="url(#pattern0)" />
+            <path d="M40 22H24C22.897 22 22 22.897 22 24V36C22 37.103 22.897 38 24 38H27V41.767L33.277 38H40C41.103 38 42 37.103 42 36V24C42 22.897 41.103 22 40 22ZM40 36H32.723L29 38.233V36H24V24H40V36Z" fill="white" />
+            <path d="M27 27H37V29H27V27ZM27 31H34V33H27V31Z" fill="white" />
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_4_8" transform="scale(0.015625)" />
+              </pattern>
+              <image
+                id="image0_4_8"
+                width="64"
+                height="64"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAB2AAAAdgB+lymcgAAAchQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////tXQcBAAAAJh0Uk5TABQkMxIITY7H7//uxIpJBjSg8pouNb21EJz+7d39kgw54/SqZi8JMGD44m8L9lVxZGX8vhwdv11H+4UC+TwY53+BtoKoU7kBvEYD2BvPXk7IBNwraWsfewptoaT3WyMZrdMy1HTJc5lBqcw2QFBE0eGGhAeRBSGJ3ognamwm0lQpE7tR0OqTjSx+ZxcR5lns8HcVMV92WiI6Ik7ZAAACdUlEQVR4nO2X61sSQRjFB4jKWUu7mS0rxYoUaoSWEVpaVmoUoXaRisyyIrXoqt0TMyu73/t3m3dZ93Hd2Z1h56kPPp1PcM57fgzLsM8sQn9VHq/P513hrutfuWp1BdYkVa5ZW1VmvXrdemxSxYaNZdQ31WCKNvMiarfIRimgKAHjTV1wK09/W6g0rtaHG/xgRBrC9WrJU7az+zui2mhjU/Nit7mpUbN3xlj9Xdrypbjlqle1SJC0xp37Ldrn7N5Dy9r2QiYnnPr7kjDT3kFPO9oh3X/Avt/ZBRMH7QcOQR7y2ObdkB92WqK2hiN26VFIe3qdAL19MHOMHqaOw/Vvc+ojdAL2VZr+IQmAn3Tuk30CUxlq1A9bbYAFSA3C96QlpwB9mtVH6Az8K85SgiH470TYgCzcJc5Rgkrin2f3EbpABrut9kCO+Bd5AHCxA9bfYVghGuYBeGHyEs/kP1V2BO4j8uUr7FHfKNwyoiNZk3tVv+31swHX9NHrJjevuxIbIOmj+QXjxtj4hDvAxPjYTYRukW9UcAcokD2dQbexCACnUVIMkERYDID/A5YHICQGuIPuigHuofvBqHtA7gEcRCanIu4AkalJw32ouwob8EgffWxyn5QOc/JTNuBZ6RAYeG62PZk8fjFdZPcRKk7HYrHMjMUP45c8dXstA0Ac14gBZvErMYAPq34hQGoOz4ot4TVOp4QAnSp+I7YEcoYMGs8Jb/ty2JDaU+QizMt48N177eWHOWzSR+vep+nTZzL7BQ5RXXiJGE8qC6qdH13a1PWVD0D07XuB6Ids7tdVcwN0DbUu7id/ltsn58lE2NCv3+X3efUHqnmAJfavVsoAAAAASUVORK5CYII="
+              />
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

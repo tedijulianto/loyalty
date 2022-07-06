@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Tantangan</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-bottom navbar-light bg-blue containerMini px-1 py-2">
+      <a class="navbar-brand m-0 py-0" href="dashboard.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.4602 8.69904C19.4598 8.69858 19.4593 8.69812 19.4588 8.69766L11.3004 0.539551C10.9527 0.19165 10.4903 0 9.99855 0C9.50676 0 9.04442 0.191498 8.69652 0.539398L0.542379 8.69339C0.539632 8.69614 0.536886 8.69904 0.534139 8.70178C-0.179972 9.42001 -0.178751 10.5853 0.537649 11.3017C0.86495 11.6292 1.29723 11.8188 1.75942 11.8387C1.77819 11.8405 1.79711 11.8414 1.81618 11.8414H2.14135V17.8453C2.14135 19.0334 3.10799 20 4.29635 20H7.48818C7.81166 20 8.07412 19.7377 8.07412 19.4141V14.707C8.07412 14.1649 8.51509 13.7239 9.05724 13.7239H10.9399C11.482 13.7239 11.923 14.1649 11.923 14.707V19.4141C11.923 19.7377 12.1853 20 12.5089 20H15.7008C16.8891 20 17.8558 19.0334 17.8558 17.8453V11.8414H18.1573C18.6489 11.8414 19.1113 11.6499 19.4593 11.302C20.1765 10.5844 20.1768 9.41711 19.4602 8.69904V8.69904Z"
+            />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Beranda</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="challenge.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.26496 0.440985C1.46185 -0.593307 0 0.253997 0 2.33198V17.6666C0 19.7466 1.46185 20.5928 3.26496 19.5595L16.6682 11.8729C18.4719 10.8382 18.4719 9.16192 16.6682 8.12751L3.26496 0.440985Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Tantangan</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="leaderboards.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 1H16V0H4V1H1C0.4 1 0 1.4 0 2V4.4C0 6.7 1.7 8.6 4 8.9V9C4 11.9 6 14.3 8.70001 14.9L8.00001 17H5.7C5.3 17 4.9 17.3 4.8 17.7L4 20H16L15.2 17.7C15.1 17.3 14.7 17 14.3 17H12L11.3 14.9C14 14.3 16 11.9 16 9V8.9C18.3 8.6 20 6.7 20 4.4V2C20 1.4 19.6 1 19 1ZM4 6.9C2.9 6.6 2 5.6 2 4.4V3H4V6.9ZM12 10L10 8.9L8.00001 10L8.50001 8L7.00001 6H9.10001L10 4L10.9 6H13L11.5 8L12 10ZM18 4.4C18 5.6 17.1 6.7 16 6.9V3H18V4.4Z"
+            />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Peringkat</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="rewards.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.6957 3.87804H17.2398C17.4319 3.57413 17.5586 3.233 17.5947 2.87222C17.7101 1.71922 17.1029 0.685626 16.0691 0.227385C15.1189 -0.193825 14.051 -0.0216383 13.2821 0.675782L11.4438 2.34179C11.0858 1.95023 10.5712 1.70414 10 1.70414C9.42781 1.70414 8.91234 1.95101 8.55425 2.34379L6.71363 0.675587C5.94344 -0.0218336 4.87601 -0.193357 3.92621 0.227619C2.89269 0.685899 2.28535 1.71984 2.40113 2.87281C2.43734 3.23331 2.56398 3.57429 2.75598 3.87804H1.30434C0.583945 3.87804 0 4.46202 0 5.18237V7.13889C0 7.49905 0.291992 7.79108 0.652187 7.79108H19.3478C19.708 7.79108 20 7.49909 20 7.13889V5.18237C20 4.46202 19.416 3.87804 18.6957 3.87804ZM8.04347 3.66066V3.87804H4.97539C4.16476 3.87804 3.5268 3.12234 3.72926 2.27836C3.81844 1.90668 4.08672 1.58984 4.43371 1.42945C4.91019 1.20922 5.43801 1.27992 5.8382 1.64215L8.04402 3.64144C8.0439 3.64788 8.04347 3.65421 8.04347 3.66066ZM16.3005 2.69906C16.2519 3.37691 15.6396 3.87812 14.9601 3.87812H11.9565V3.66074C11.9565 3.65304 11.956 3.64542 11.956 3.63773C12.4557 3.18476 13.5397 2.20226 14.1276 1.66933C14.4618 1.36648 14.9293 1.22512 15.3615 1.35402C15.9817 1.53902 16.3459 2.06644 16.3005 2.69906Z"
+            />
+            <path d="M1.30432 9.0954V18.6606C1.30432 19.381 1.88827 19.965 2.60866 19.965H8.69562V9.0954H1.30432Z" />
+            <path d="M11.3043 9.0954V19.965H17.3913C18.1117 19.965 18.6956 19.381 18.6956 18.6606V9.0954H11.3043Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Hadiah</span>
+        </div>
+      </a>
+      <a class="navbar-brand m-0 py-0" href="profile.html" style="width: 60px">
+        <div class="d-flex flex-column align-items-center">
+          <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.99991 8.94733C10.4706 8.94733 12.4736 6.9444 12.4736 4.47366C12.4736 2.00293 10.4706 0 7.99991 0C5.52917 0 3.52625 2.00293 3.52625 4.47366C3.52625 6.9444 5.52917 8.94733 7.99991 8.94733Z" />
+            <path d="M7.99998 10C3.63985 10 0.105225 13.5346 0.105225 17.8947C0.105225 19.0574 1.04781 20 2.21051 20H13.7895C14.9522 20 15.8948 19.0574 15.8948 17.8947C15.8947 13.5346 12.3601 10 7.99998 10Z" />
+          </svg>
+          <span class="fs-md text-whitePale lh-1 mt-1">Profil</span>
+        </div>
+      </a>
+    </nav>
+
+    <section class="containerBase">
+      <div class="paddingContent">
+        <div class="card bg-blue rounded-20">
+          <div class="card-body d-flex justify-content-between align-items-center mx-1">
+            <div class="d-flex flex-column">
+              <span class="fs-md text-white">Poin Kamu</span>
+              <span class="text-white"><strong>2000</strong></span>
+            </div>
+            <button class="bg-yellowGradient py-1 text-white rounded-pill border-0 fs-md" style="width: 125px; height: 35px"><strong>Klaim Hadiah</strong></button>
+          </div>
+        </div>
+
+        <div class="card cardRed rounded-20 mt-3">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <span class="text-white fs-md">Kamu mendapatkan</span>
+              <svg role="button" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.5108 2.48937C11.1913 -0.829771 5.80924 -0.83014 2.48937 2.48937C-0.830137 5.80887 -0.829768 11.191 2.48937 14.5108C5.80888 17.8296 11.191 17.83 14.5108 14.5108C17.83 11.191 17.8296 5.80924 14.5108 2.48937ZM9.60846 12.1958C9.60846 12.8082 9.11212 13.3046 8.49974 13.3046C7.88736 13.3046 7.39102 12.8082 7.39102 12.1958V7.76096C7.39102 7.14858 7.88736 6.65224 8.49974 6.65224C9.11212 6.65224 9.60846 7.14858 9.60846 7.76096V12.1958ZM8.48015 5.86579C7.84153 5.86579 7.41578 5.41343 7.42908 4.855C7.41578 4.2696 7.84153 3.83092 8.49309 3.83092C9.14501 3.83092 9.55746 4.26997 9.57113 4.855C9.57076 5.41343 9.14538 5.86579 8.48015 5.86579Z"
+                  fill="#E8E7E7"
+                />
+              </svg>
+            </div>
+
+            <h5 class="text-white">Gratis 0X Spin</h5>
+
+            <button class="btn-spin bg-yellowGradient py-1 text-white rounded-pill border-0 fs-md mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path fill="white" d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z" />
+              </svg>
+              <strong>Spin Sekarang</strong>
+            </button>
+
+            <div class="d-flex justify-content-between mt-3">
+              <span class="fs-md text-white">Kamu telah login</span>
+              <span class="fs-md text-white"><strong>1</strong> / 7 Hari</span>
+            </div>
+            <div class="progress rounded-20 border-0 mt-2">
+              <div class="progress-bar bg-yellowGradient rounded-20" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between fs-md mt-3">
+          <span class="text-white"><strong>Login Harian</strong></span>
+          <a href="#" class="text-decoration-none d-block text-white">Detail<i class="bi bi-chevron-right" style="font-size: 10px"></i></a>
+        </div>
+
+        <div id="sliderDailyLogin" class="mt-2 owl-carousel">
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative dailyLoginBg-active">
+            <span class="text-white txtDays-active">Hari ke 1</span>
+            <svg class="checklistDays-active" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 2</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 3</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 4</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 5</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 6</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+          <div role="button" class="items d-flex flex-column justify-content-center align-items-center bg-blue btn-dailyLogin rounded-20 position-relative">
+            <span class="text-white">Hari ke 7</span>
+            <svg class="d-none" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.1875" y="0.1875" width="28.275" height="28.275" rx="14.1375" fill="white" fill-opacity="0.12" />
+              <path d="M7.79999 15.8786L12.5125 19.7625L21.9375 8.88751" stroke="white" stroke-opacity="0.66" />
+            </svg>
+          </div>
+        </div>
+
+        <span class="d-inline-block text-white fs-md my-3"><strong>Kuis Hari Ini</strong></span>
+
+        <div class="card rounded-20 bg-quiz bg-transparent border-0">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="text-white">Kuis 1</h5>
+                <p class="fs-md text-white">1 Poin</p>
+              </div>
+              <button class="bg-transparent p-0 border-0">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="36" height="36" rx="18" fill="white" fill-opacity="0.4" />
+                  <path d="M15.3238 10.8307C13.9151 10.055 12.773 10.6905 12.773 12.249V23.7499C12.773 25.31 13.9151 25.9446 15.3238 25.1696L25.795 19.4047C27.2042 18.6287 27.2042 17.3714 25.795 16.5956L15.3238 10.8307Z" fill="white" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
