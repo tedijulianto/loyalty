@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.07em;
   background-color: #2d2d2d;
 }
 
@@ -19,6 +22,9 @@ p {
 }
 
 /* ================================= Reusable CSS ================================= */
+.fs-xs {
+  font-size: 8px;
+}
 
 .fs-sm {
   font-size: 10px;
@@ -26,10 +32,6 @@ p {
 
 .fs-md {
   font-size: 12px;
-}
-
-.text-spacing {
-  letter-spacing: 0.5px;
 }
 
 .bg-blue {
@@ -78,7 +80,7 @@ p {
 }
 
 .paddingContent {
-  padding: 16px 16px 68px 16px;
+  padding: 16px 16px 66px 16px;
 }
 
 /* ================================= Login & Register CSS ================================= */
@@ -170,6 +172,12 @@ nav a:hover span {
   fill-opacity: 1;
 }
 
+.navbar .navbar-brand.active svg,
+.navbar .navbar-brand.active span {
+  color: white;
+  fill-opacity: 1;
+}
+
 #marquee {
   background: rgb(238, 238, 16);
 }
@@ -191,8 +199,8 @@ nav a:hover span {
 
 .coinText {
   z-index: 2;
-  right: 30px;
-  top: 21.5px;
+  right: 28px;
+  top: 22px;
 }
 
 .ribbon {
@@ -206,7 +214,7 @@ nav a:hover span {
 
 .btn-mid {
   width: 118px;
-  padding: 16px 0;
+  height: 91px;
 }
 
 .btn-mid svg {
@@ -231,7 +239,7 @@ nav a:hover span {
 .btn-dailyLogin:active {
   background-color: #277cb9;
   width: 137px;
-  height: 174px;
+  height: 175px;
 }
 
 .txtDays-active {
@@ -255,12 +263,12 @@ nav a:hover span {
 .yellowRectangle {
   background: #fea832;
   border: 1px solid #fea832;
-  box-shadow: 0px 4px 0px #d36f12;
+  box-shadow: 0px 3px 0px #d36f12;
   border-radius: 5px;
   width: 100%;
-  height: 22px;
+  height: 20px;
   position: absolute;
-  top: 23px;
+  top: 19px;
   left: 0;
   z-index: 1;
 }
@@ -268,12 +276,12 @@ nav a:hover span {
 .greenRectangle {
   background: #379a6a;
   border: 1px solid #379a6a;
-  box-shadow: 0px 4px 0px #0a6b48;
+  box-shadow: 0px 3px 0px #0a6b48;
   border-radius: 5px;
   width: 100%;
-  height: 22px;
+  height: 20px;
   position: absolute;
-  top: 53.5px;
+  top: 47px;
   left: 0;
   z-index: 1;
 }
@@ -281,12 +289,12 @@ nav a:hover span {
 .blueRectangle {
   background: #00a3ff;
   border: 1px solid #00a3ff;
-  box-shadow: 0px 4px 0px #0064ac;
+  box-shadow: 0px 3px 0px #0064ac;
   border-radius: 5px;
   width: 100%;
-  height: 22px;
+  height: 20px;
   position: absolute;
-  top: 84.5px;
+  top: 75px;
   left: 0;
   z-index: 1;
 }
@@ -294,22 +302,22 @@ nav a:hover span {
 .ribbonYellow {
   position: absolute;
   top: 2px;
-  left: 7px;
-  width: 12px;
+  left: 9px;
+  width: 11px;
 }
 
 .ribbonGreen {
   position: absolute;
   top: 2px;
-  left: 7px;
-  width: 12px;
+  left: 9px;
+  width: 11px;
 }
 
 .ribbonBlue {
   position: absolute;
   top: 2px;
-  left: 7px;
-  width: 12px;
+  left: 9px;
+  width: 11px;
 }
 
 /* ================================= Rewards CSS ================================= */
@@ -380,15 +388,15 @@ nav a:hover span {
     top: 479px;
   }
 
+  .fs-xs {
+    font-size: 10px;
+  }
+
+  .fs-sm {
+    font-size: 11px;
+  }
+
   /* ========== Dashboard ========== */
-  .paddingContent {
-    padding-bottom: 69px;
-  }
-
-  .coinText {
-    right: 31px;
-  }
-
   .silverGradient {
     width: 70px;
   }
@@ -396,6 +404,43 @@ nav a:hover span {
   /* ========== Rewards ========== */
   .cardPoin {
     height: 140px;
+  }
+
+  /* ========== Leaderboards ========== */
+  .yellowRectangle {
+    box-shadow: 0px 4px 0px #d36f12;
+    height: 24px;
+    top: 17.5px;
+  }
+
+  .greenRectangle {
+    box-shadow: 0px 4px 0px #0a6b48;
+    height: 24px;
+    top: 49px;
+  }
+
+  .blueRectangle {
+    box-shadow: 0px 4px 0px #0064ac;
+    height: 24px;
+    top: 80px;
+  }
+
+  .ribbonYellow {
+    top: 3px;
+    left: 8.5px;
+    width: 12px;
+  }
+
+  .ribbonGreen {
+    top: 3px;
+    left: 8.5px;
+    width: 12px;
+  }
+
+  .ribbonBlue {
+    top: 3px;
+    left: 8.5px;
+    width: 12px;
   }
 }
 
@@ -408,42 +453,35 @@ nav a:hover span {
     width: 130px;
   }
 
-  .paddingContent {
-    padding-bottom: 70px;
-  }
-
   /* ========== Dashboard ========== */
-  .fs-md {
-    font-size: 13px;
+  .coinText {
+    right: 27px;
+    top: 23.5px;
   }
 
   /* ========== Leaderboards ========== */
-  .fs-sm {
-    font-size: 11px;
-  }
-
   .yellowRectangle {
-    top: 24px;
+    top: 18.5px;
   }
 
   .greenRectangle {
-    top: 57.5px;
+    top: 49.5px;
   }
 
   .blueRectangle {
-    top: 90px;
+    top: 80.5px;
   }
 
   .ribbonYellow {
-    left: 8.5px;
+    left: 9px;
   }
 
   .ribbonGreen {
-    left: 8.5px;
+    left: 9px;
   }
 
   .ribbonBlue {
-    left: 8.5px;
+    left: 9px;
   }
 
   /* ========== Rewards ========== */
@@ -461,21 +499,9 @@ nav a:hover span {
     width: 140px;
   }
 
-  .paddingContent {
-    padding-bottom: 71px;
-  }
-
   /* ========== Dashboard ========== */
-  .fs-md {
-    font-size: 14px;
-  }
-
   .coin {
     width: 85px;
-  }
-
-  .coinText {
-    top: 22.5px;
   }
 
   .ribbon {
@@ -489,31 +515,6 @@ nav a:hover span {
   /* ========== Challenge ========== */
   .btn-spin {
     width: 140px;
-  }
-
-  /* ========== Leaderboards ========== */
-  .yellowRectangle {
-    top: 26px;
-  }
-
-  .greenRectangle {
-    top: 59px;
-  }
-
-  .blueRectangle {
-    top: 91.5px;
-  }
-
-  .ribbonYellow {
-    left: 9.5px;
-  }
-
-  .ribbonGreen {
-    left: 9.5px;
-  }
-
-  .ribbonBlue {
-    left: 9.5px;
   }
 }
 

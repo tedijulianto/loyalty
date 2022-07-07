@@ -1,3 +1,9 @@
+document.querySelectorAll(".navbar-brand").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+
 function togglePassword() {
   const passwordInput = document.getElementById("password");
   const iconLogin = document.getElementById("eyeIcon");
