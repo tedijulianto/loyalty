@@ -355,6 +355,71 @@ nav a:hover span {
   height: 10px;
 }
 
+/* .circular-progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  background-color: #071d57;
+  border-radius: 50%;
+}
+.value-container {
+  position: relative;
+  font-weight: 700;
+  color: #111;
+} */
+
+.progressBox {
+  height: 100px;
+  width: 100px;
+}
+
+.outer {
+  background: rgba(255, 255, 255, 0.1);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.inner {
+  background: #071d57;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 11px;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: circleAnimate 2s linear forwards;
+}
+
+.circleBar {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  height: 122px;
+}
+
+@keyframes circleAnimate {
+  100% {
+    stroke-dashoffset: 110;
+  }
+}
+
 /* ================================= Responsive CSS ================================= */
 
 @media screen and (min-width: 360px) {

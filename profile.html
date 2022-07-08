@@ -110,20 +110,29 @@
               <h3 class="text-white">2.5M</h3>
               <button class="bg-yellowGradient mx-auto w-100 text-white rounded-pill mt-2 border-0 fs-md py-1 px-3">Upgrade</button>
             </div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="53" cy="53" r="45" stroke="white" stroke-opacity="0.1" stroke-width="16" />
-                <path d="M53.1446 8C77.9175 8 98 28.1472 98 53C98 77.8528 77.9175 98 53.1446 98C42.4862 98 32.696 94.2706 25 88.0415" stroke="url(#paint0_linear_4_406)" stroke-width="16" stroke-linecap="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_4_406" x1="93" y1="8" x2="96.222" y2="86.0867" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FF7A00" />
-                    <stop offset="1" stop-color="#FFBF00" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <div class="d-flex flex-column align-items-center position-absolute">
-                <span class="text-white fs-sm">3.5M</span>
-                <span class="text-white fs-sm">to Diamond</span>
+
+            <!-- <div class="circular-progress">
+              <div class="value-container text-center fs-sm text-white"></div>
+            </div> -->
+
+            <div class="position-relative">
+              <div class="d-flex justify-content-center">
+                <div class="progressBox">
+                  <div class="outer">
+                    <div class="inner d-flex justify-content-center align-items-center">
+                      <div id="number" class="text-white fs-sm text-center"></div>
+                    </div>
+                  </div>
+                </div>
+                <svg class="circleBar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#FFBF00" />
+                      <stop offset="100%" stop-color="#FF7A00" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="50" cy="50" r="35" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
