@@ -30,7 +30,7 @@ function toggleConfirmPassword() {
 
 $(document).ready(function () {
   var sliderCard = $("#sliderCard");
-  var sliderDailyLogin = $("#sliderDailyLogin");
+  // var sliderDailyLogin = $("#sliderDailyLogin");
 
   sliderCard.owlCarousel({
     loop: false,
@@ -45,21 +45,58 @@ $(document).ready(function () {
     },
   });
 
-  sliderDailyLogin.owlCarousel({
-    loop: false,
-    center: false,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      390: {
-        items: 3,
-        margin: 50,
-      },
+  // sliderDailyLogin.owlCarousel({
+  //   loop: false,
+  //   center: false,
+  //   nav: false,
+  //   dots: false,
+  //   responsive: {
+  //     0: {
+  //       items: 2,
+  //     },
+  //     390: {
+  //       items: 3,
+  //       margin: 50,
+  //     },
+  //   },
+  // });
+});
+
+function activeDailyLogin(num) {
+  var a = $(".swiper-slide").eq(num);
+  // if ($(this).find("swiper-slide-active")) {
+  $(a).toggleClass("active");
+  // } else {
+  //   $(".swiper-slide").removeClass("active");
+  // }
+}
+var index = 0;
+var swiper = new Swiper(".mySwiper", {
+  initialSlide: index,
+  slidesPerView: 2,
+  loop: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 2.3,
+      spaceBetween: 10,
     },
-  });
+    375: {
+      slidesPerView: 2.4,
+      spaceBetween: 5,
+    },
+    390: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+    },
+    412: {
+      slidesPerView: 2.5,
+      spaceBetween: 0,
+    },
+  },
+  on: {
+    init: activeDailyLogin(index), // do also on init
+    // slideChange: activeDailyLogin, // is this needed?
+  },
 });
 
 // let progressBar = document.querySelector(".circular-progress");
@@ -81,14 +118,14 @@ $(document).ready(function () {
 //   }
 // }, speed);
 
-let number = document.getElementById("number");
-let counter = 0;
-let counterEnd = 50;
+// let number = document.getElementById("number");
+// let counter = 0;
+// let counterEnd = 50;
 
-let setProgress = setInterval(() => {
-  counter++;
-  number.textContent = `${counter}M to Diamond`;
-  if (counter == counterEnd) {
-    clearInterval(setProgress);
-  }
-}, 38);
+// let setProgress = setInterval(() => {
+//   counter++;
+//   number.textContent = `${counter}M to Diamond`;
+//   if (counter == counterEnd) {
+//     clearInterval(setProgress);
+//   }
+// }, 38);
