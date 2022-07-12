@@ -77,9 +77,9 @@
       <div class="paddingContent">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <div class="position-relative">
-            <img src="https://source.unsplash.com/random" alt="User" width="100" height="100" class="rounded-circle" />
-            <button class="bg-blue border-0 d-flex rounded-circle btn-changeProfile">
-              <svg class="svgProfile" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <img src="https://source.unsplash.com/random" alt="User" width="100" height="100" class="rounded-circle" id="profilePic" />
+            <div class="bg-blue border-0 d-flex rounded-circle btn-changeProfile">
+              <svg class="svgChangeProfilePic" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_4_2726)">
                   <path
                     d="M9.88086 2.68738L1.07744 11.4914C1.03315 11.5359 1.00117 11.592 0.985939 11.6522L0.0101637 15.5688C-0.0190245 15.6867 0.0156207 15.8121 0.101662 15.8981C0.166765 15.9632 0.255472 15.9992 0.346209 15.9992C0.374001 15.9992 0.402428 15.9958 0.430094 15.9888L4.34665 15.0129C4.40769 14.9977 4.46315 14.9659 4.50744 14.9216L13.3116 6.11814L9.88086 2.68738Z"
@@ -98,7 +98,8 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+              <input id="changeImageProfile" type="file" class="changeProfilePic" onchange="loadFile(event)" />
+            </div>
           </div>
           <span class="text-white mt-2">Lorem ipsum</span>
         </div>

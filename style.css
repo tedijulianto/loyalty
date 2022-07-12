@@ -182,6 +182,14 @@ nav a:hover span {
   background: rgb(238, 238, 16);
 }
 
+.owl-carousel .owl-stage {
+  padding: 1rem 0;
+}
+
+.owl-item.activeCard {
+  transform: scale(1.05);
+}
+
 .bg-cardGold {
   background-image: url("img/Card_Gold.svg");
   background-size: cover;
@@ -254,41 +262,38 @@ nav a:hover span {
   left: 16px;
 } */
 
-.swiper {
+.swiper__dailyLogin {
   width: 100%;
   height: 200px;
   margin: auto;
 }
 
-.swiper-slide {
+.swiper-dailyLogin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide.active div {
+.swiper-dailyLogin.active div {
   background-color: #277cb9;
   width: 137px;
   height: 175px;
 }
 
-.swiper-slide.active div span {
+.swiper-dailyLogin.active div span {
   position: absolute;
-  top: 16px;
+  top: 25px;
   left: 16px;
 }
 
-.swiper-slide div svg {
+.swiper-dailyLogin div svg {
   display: none;
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
 }
 
-.swiper-slide.active div svg {
+.swiper-dailyLogin.active div svg {
   display: block;
   position: absolute;
-  bottom: 16px;
+  bottom: 25px;
   left: 16px;
 }
 
@@ -424,6 +429,18 @@ nav a:hover span {
   padding-bottom: 3px;
 }
 
+#ranking tbody tr td:nth-child(4) {
+  position: relative;
+  padding-left: 15px;
+  text-align: left;
+}
+
+#ranking tbody tr td:nth-child(4)::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.02344 0C2.72583 0 0 2.67891 0 5.97656C0 9.27422 2.72583 12 6.02344 12C9.32105 12 12 9.27422 12 5.97656C12 2.67891 9.32105 0 6.02344 0Z' fill='%23FEDB41' /%3e%3cpath d='M12 5.97656C12 9.27422 9.32105 12 6.02344 12V0C9.32105 0 12 2.67891 12 5.97656Z' fill='%23FFCC33' /%3e%3cpath d='M6.02344 1.40625C3.5062 1.40625 1.40625 3.45935 1.40625 5.97656C1.40625 8.49377 3.5062 10.5938 6.02344 10.5938C8.54067 10.5938 10.5938 8.49377 10.5938 5.97656C10.5938 3.45935 8.54067 1.40625 6.02344 1.40625Z' fill='%23FEA832' /%3e%3cpath d='M10.5938 5.97656C10.5938 8.49377 8.54067 10.5938 6.02344 10.5938V1.40625C8.54067 1.40625 10.5938 3.45935 10.5938 5.97656Z' fill='%23FE9923' /%3e%3cg style='mix-blend-mode: lighten'%3e%3cpath d='M8.59048 5.14446C8.59048 5.48893 8.51142 5.80516 8.3533 6.09316C8.19519 6.37551 7.95236 6.60422 7.62483 6.77928C7.2973 6.95434 6.89072 7.04187 6.40507 7.04187H5.50719V9.17646H4.05872V3.2301H6.40507C6.87942 3.2301 7.28036 3.31198 7.60789 3.47575C7.93542 3.63951 8.18107 3.8654 8.34483 4.1534C8.5086 4.4414 8.59048 4.77175 8.59048 5.14446ZM6.29495 5.88987C6.57166 5.88987 6.77777 5.82493 6.9133 5.69504C7.04883 5.56516 7.1166 5.38163 7.1166 5.14446C7.1166 4.90728 7.04883 4.72375 6.9133 4.59387C6.77777 4.46399 6.57166 4.39904 6.29495 4.39904H5.50719V5.88987H6.29495Z' fill='%23FFD000' /%3e%3c/g%3e%3c/svg%3e");
+  position: absolute;
+  left: 0;
+}
+
 /* ================================= Rewards CSS ================================= */
 .cardLevel {
   width: 250px;
@@ -452,11 +469,16 @@ nav a:hover span {
   padding: 10px;
   bottom: 0px;
   right: 0px;
+  cursor: pointer;
 }
 
-.svgProfile {
+.svgChangeProfilePic {
   width: 10px;
   height: 10px;
+}
+
+.changeProfilePic {
+  display: none;
 }
 
 /* .circular-progress {
@@ -655,12 +677,12 @@ circle {
 
   /* ========== Dashboard ========== */
   .coinText {
-    right: 27px;
-    top: 23.5px;
+    right: 26px;
+    top: 22px;
   }
 
   /* ========== Leaderboards ========== */
-  .yellowRectangle {
+  /* .yellowRectangle {
     top: 18.5px;
   }
 
@@ -682,7 +704,7 @@ circle {
 
   .ribbonBlue {
     left: 9px;
-  }
+  } */
 
   /* ========== Rewards ========== */
   .cardPoin {
@@ -702,6 +724,10 @@ circle {
   /* ========== Dashboard ========== */
   .coin {
     width: 85px;
+  }
+
+  .coinText {
+    right: 28px;
   }
 
   .ribbon {

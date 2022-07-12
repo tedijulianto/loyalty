@@ -28,50 +28,34 @@ function toggleConfirmPassword() {
   }
 }
 
-$(document).ready(function () {
-  var sliderCard = $("#sliderCard");
-  // var sliderDailyLogin = $("#sliderDailyLogin");
+var sliderCard = $("#sliderCard");
+var cardIndex = 2;
 
-  sliderCard.owlCarousel({
+sliderCard
+  .on("initialized.owl.carousel", function () {
+    sliderCard.find(".owl-item").eq(cardIndex).addClass("activeCard");
+  })
+  .owlCarousel({
+    startPosition: cardIndex,
     loop: false,
-    center: false,
-    margin: 10,
+    center: true,
     nav: false,
     dots: false,
     responsive: {
       320: {
-        items: 1,
+        items: 1.15,
+        margin: 16,
       },
     },
   });
 
-  // sliderDailyLogin.owlCarousel({
-  //   loop: false,
-  //   center: false,
-  //   nav: false,
-  //   dots: false,
-  //   responsive: {
-  //     0: {
-  //       items: 2,
-  //     },
-  //     390: {
-  //       items: 3,
-  //       margin: 50,
-  //     },
-  //   },
-  // });
-});
-
 function activeDailyLogin(num) {
-  var a = $(".swiper-slide").eq(num);
-  // if ($(this).find("swiper-slide-active")) {
+  var a = $(".swiper-dailyLogin").eq(num);
   $(a).toggleClass("active");
-  // } else {
-  //   $(".swiper-slide").removeClass("active");
-  // }
 }
+
 var index = 0;
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper__dailyLogin", {
   initialSlide: index,
   slidesPerView: 2,
   loop: false,
@@ -95,8 +79,17 @@ var swiper = new Swiper(".mySwiper", {
   },
   on: {
     init: activeDailyLogin(index), // do also on init
-    // slideChange: activeDailyLogin, // is this needed?
   },
+});
+
+var loadFile = function (event) {
+  var image = document.getElementById("profilePic");
+  image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+$(".btn-changeProfile").on("click", function () {
+  // $("#file")[0].click();
+  document.getElementById("changeImageProfile").click();
 });
 
 // let progressBar = document.querySelector(".circular-progress");
