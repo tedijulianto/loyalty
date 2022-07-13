@@ -29,7 +29,7 @@ function toggleConfirmPassword() {
 }
 
 var sliderCard = $("#sliderCard");
-var cardIndex = 2;
+var cardIndex = 1;
 
 sliderCard
   .on("initialized.owl.carousel", function () {
@@ -42,12 +42,44 @@ sliderCard
     nav: false,
     dots: false,
     responsive: {
-      320: {
+      0: {
         items: 1.15,
         margin: 16,
       },
+      412: {
+        items: 1.15,
+        margin: 20,
+      },
     },
   });
+
+var swiperBanner = new Swiper(".swiper-banner", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var acc = document.getElementsByClassName("accordion-news");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    var newsDetail = this.nextElementSibling;
+    if (newsDetail.style.maxHeight) {
+      newsDetail.style.maxHeight = null;
+    } else {
+      newsDetail.style.maxHeight = newsDetail.scrollHeight + "px";
+    }
+  });
+}
 
 function activeDailyLogin(num) {
   var a = $(".swiper-dailyLogin").eq(num);
@@ -55,7 +87,7 @@ function activeDailyLogin(num) {
 }
 
 var index = 0;
-var swiper = new Swiper(".swiper__dailyLogin", {
+var swiperDailyLogin = new Swiper(".swiper__dailyLogin", {
   initialSlide: index,
   slidesPerView: 2,
   loop: false,
