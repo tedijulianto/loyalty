@@ -18,56 +18,50 @@
         <div class="d-flex justify-content-start align-items-center gap-2 mt-3">
           <button type="button" class="btn-back rounded-3 border-0">
             <a href="login.html" class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-              </svg>
+              <i class="bi bi-chevron-left text-white"></i>
             </a>
           </button>
-          <span class="text-white d-block">Daftar</span>
+          <span class="text-white d-block fs-md">Daftar</span>
         </div>
 
         <form action="">
-          <div class="">
-            <div class="mt-4">
-              <label for="name" class="text-white">Nama</label>
-              <input type="text" id="name" name="name" class="mt-2 d-block w-100" />
-            </div>
-
-            <div class="user mt-3">
-              <label for="userid" class="text-white">User ID</label>
-              <input type="text" id="userid" name="userid" class="mt-2 d-block w-100" />
-            </div>
-
-            <div class="mt-3">
-              <label for="telp" class="text-white">No. Hp</label>
-              <input type="text" id="telp" name="telp" class="mt-2 d-block w-100" />
-            </div>
-
-            <div class="mt-3">
-              <label for="password" class="text-white">Kata Sandi</label>
-              <input type="password" id="password" name="password" class="mt-2 d-block w-100" />
-            </div>
-
-            <button type="button" onclick="togglePassword()" id="showPassword" class="border-0 position-absolute btnShowPw">
-              <i id="eyeIcon" class="bi bi-eye-fill" style="font-size: 22px; color: #fff"></i>
-            </button>
-
-            <div class="mt-3">
-              <label for="confirmPassword" class="text-white">Konfirmasi Kata Sandi</label>
-              <input type="password" id="confirmPassword" name="confirmPassword" class="mt-2 d-block w-100" />
-            </div>
-
-            <button type="button" onclick="toggleConfirmPassword()" id="showConfirmPw" class="border-0 position-absolute btnShowConfirmPw">
-              <i id="eyeIconRegister" class="bi bi-eye-fill" style="font-size: 22px; color: #fff"></i>
-            </button>
-
-            <button type="submit" class="btn btn-primary btn-confirm w-100 mt-4">Selanjutnya</button>
+          <div class="mt-4">
+            <label for="name" class="text-white fs-md">Nama</label>
+            <input type="text" id="name" name="name" class="mt-1 d-block w-100 fs-md" />
           </div>
+
+          <div class="user mt-3">
+            <label for="userid" class="text-white fs-md">User ID</label>
+            <input type="text" id="userid" name="userid" class="mt-1 d-block w-100 fs-md" />
+          </div>
+
+          <div class="mt-3">
+            <label for="telp" class="text-white fs-md">No. Hp</label>
+            <input type="text" id="telp" name="telp" class="mt-1 d-block w-100 fs-md" />
+          </div>
+
+          <div class="mt-3 position-relative">
+            <label for="password" class="text-white fs-md">Kata Sandi</label>
+            <input type="password" id="password" name="password" class="mt-1 d-block w-100 fs-md" />
+            <button type="button" onclick="togglePassword()" id="showPassword" class="border-0 btnShowPw">
+              <i id="eyeIcon" class="bi bi-eye-fill text-white"></i>
+            </button>
+          </div>
+
+          <div class="mt-3 position-relative">
+            <label for="confirmPassword" class="text-white fs-md">Konfirmasi Kata Sandi</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="mt-1 d-block w-100 fs-md" />
+            <button type="button" onclick="toggleConfirmPassword()" id="showConfirmPw" class="border-0 btnShowConfirmPw">
+              <i id="eyeIconRegister" class="bi bi-eye-fill text-white"></i>
+            </button>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-confirm w-100 mt-4 fs-md">Selanjutnya</button>
         </form>
 
-        <div class="text-center mt-4">
-          <span class="text-white">Sudah punya akun? </span>
-          <a href="login.html" class="text-blue text-decoration-none">Login</a>
+        <div class="text-center mt-3">
+          <span class="text-white fs-md">Sudah punya akun? </span>
+          <a href="login.html" class="text-blue text-decoration-none fs-md">Login</a>
         </div>
 
         <button type="button" class="d-none btn btn-primary btn-help rounded-circle p-2">

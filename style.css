@@ -47,6 +47,10 @@ p {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.rounded-10 {
+  border-radius: 10px;
+}
+
 .rounded-20 {
   border-radius: 20px;
 }
@@ -123,7 +127,7 @@ input[type="password"] {
 
 .btn-back {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px 6px;
+  padding: 4px;
 }
 
 .btn-back:hover {
@@ -136,26 +140,23 @@ input[type="password"] {
 }
 
 .btnShowPassword {
-  top: 51.5%;
-  left: 93%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 1px;
+  right: 3px;
   background-color: transparent;
 }
 
 .btnShowPw {
-  top: 369px;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 1px;
+  right: 3px;
   background-color: transparent;
 }
 
 .btnShowConfirmPw {
-  top: 451px;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 1px;
+  right: 3px;
   background-color: transparent;
 }
 
@@ -270,17 +271,22 @@ nav a:hover span {
 
 .accordion-news {
   width: 100%;
-  height: 116px;
+  height: 100px;
   background: #1c355d;
   cursor: pointer;
 }
 
-.news-details {
+.accordion-news-detail {
   padding: 0 10px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: all 0.4s ease-out;
+}
+
+.accordion-news-thumb {
+  width: 125px;
+  height: 100px;
 }
 
 /* ================================= Challenge CSS ================================= */
@@ -588,7 +594,7 @@ circle {
 
 .circleBar {
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   height: 122px;
@@ -596,7 +602,7 @@ circle {
 
 @keyframes circleAnimate {
   100% {
-    stroke-dashoffset: 110;
+    stroke-dashoffset: 1;
   }
 }
 
@@ -620,17 +626,15 @@ circle {
   }
 
   .btnShowPassword {
-    top: 53%;
+    bottom: 3px;
   }
 
   .btnShowPw {
-    left: 89.5%;
-    top: 391px;
+    bottom: 3px;
   }
 
   .btnShowConfirmPw {
-    left: 89.5%;
-    top: 479px;
+    bottom: 3px;
   }
 
   .fs-xs {
@@ -640,6 +644,15 @@ circle {
   /* ========== Dashboard ========== */
   .silverGradient {
     width: 70px;
+  }
+
+  .accordion-news {
+    height: 116px;
+  }
+
+  .accordion-news-thumb {
+    width: 145px;
+    height: 116px;
   }
 
   /* ========== Rewards ========== */
@@ -805,15 +818,6 @@ circle {
 @media screen and (min-width: 412px) {
   .containerBase {
     width: 412px;
-  }
-
-  .btnShowPassword {
-    left: 94%;
-  }
-
-  .btnShowPw,
-  .btnShowConfirmPw {
-    left: 91%;
   }
 
   /* ========== Dashboard ========== */
